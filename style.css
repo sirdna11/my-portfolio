@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Bodoni Moda;
 }
 body {
     color: white;
@@ -9,12 +10,18 @@ body {
     background-image: url('images/rectangle.png'); 
     background-repeat: no-repeat; 
     background-position: center top; 
-    background-size: 40% auto; 
-    height: 3000px;
+    margin: 0; /* Removing margin to prevent unwanted spaces */
+    background-size: 50% 2980px;
+    height: 2992px;
 }
-nav {
-    text-align: center;     
-     margin-top: 100px;
+
+
+
+nav {    
+     margin-top: 6.25rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
 nav a {
     color: white;
@@ -26,8 +33,8 @@ nav a {
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
+    padding-bottom: 30px;
     letter-spacing: 0.35em;
-    text-align: left;
 }
 nav a:hover {
     color: #FFD700;         
@@ -35,7 +42,7 @@ nav a:hover {
 .section1{
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 12.5rem;
 }
 
 .name-backgraund {
@@ -67,50 +74,65 @@ nav a:hover {
     height: 1000px;
     width: 100%;
     background-image: url('images/Group.png');
-    background-position: left 400px center ;
-   
+    background-position:  center ;
     background-repeat: no-repeat; 
-   
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Software-container h2{
+    font-family: Bodoni Moda;
+font-size: 64px;
+font-weight: 800;
+letter-spacing: 0em;
+}
+.developer{
+    padding-left: 5rem;
 }
 .Software-container{
-    margin-left: 268px;
+    margin-top: 4rem;
+    text-align: left;
+    margin-left: 15%;
 }
-h2{
+.section3 h2{
     font-family: Bodoni Moda;
     font-size: 64px;
     font-weight: 800;
     letter-spacing: 0em;
-    line-height: 0.9em;
 }
-.developer{
-    margin-left: 100px;
-}
-p{
+.Software-container p{
+    margin-top: 20px;
+    max-width: 420px;
     font-family: Inter;
 font-size: 14px;
 font-weight: 400;
 line-height: 17px;
 letter-spacing: 0em;
 text-align: left;
-}
-.p-container{
-    margin-top: 50px;
-    width: 430px;
-    height: 61px;
-}
-.p-container2{
-    width: 519px;
-height: 145px;
-margin-top: 50px;
 
 }
-.about-me-h2{
-    text-align: center;
-}
 .about-me{
-    margin-top: 200px;
-   float: right;
-   margin-right: 228px;
+    margin-top: 450px;
+    text-align: left;
+    margin-right: 10%;
+}
+.about-me h2{
+    font-family: Bodoni Moda;
+font-size: 64px;
+font-weight: 800;
+letter-spacing: 0em;
+text-align: center;   
+}
+.about-me p{
+    max-width: 420px;
+    text-align: left;
+    font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 .modern-btn {
     background-color: white;
@@ -137,58 +159,227 @@ margin-top: 50px;
     transform: translateY(0); /* Reset lift effect when pressed */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow to original when pressed */
 }
-.img-container {
-    position: relative;
-    display: inline-block;  /* or use 'block' based on your design */
-    overflow: hidden;
-}
-
-.img-container img {
-   
-    max-width: 100%;
-    height: 100%;
-    display: block;
-    image-rendering: smooth;
-    border-radius: 8.677248001098633px
-
-}
-.img-container2{
-    width: 300px;
-    height: 400px;
-    margin-right: 50px;
-}
-.btn-group {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.btn {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 15px;
-    background-color: #333;  /* adjust color as needed */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.img-container:hover .btn-group {
-    opacity: 1;
-}
 
 .section3{
+    display: flex;
+  margin-top: 50px;
+    flex-direction: column;
+}
+.section3 h2{
+    text-align: center;
+}
+.project-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* adjust as needed */
+    justify-content: center;
+  }
+  
+  .project-card {
+    position: relative;
+    width: 350px;
+    border: 1px solid #ccc; /* Adjust as necessary */
+    border-radius: 10px; /* Optional: for rounded corners */
+    overflow: hidden; /* Ensures content doesn't spill over */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: for a shadow effect */
+    margin-bottom: 20px; /* Adjust as necessary */
+    transition: transform 0.3s; /* Optional: for a smooth hover effect */
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Optional: for a "lift" effect on hover */
+  }
+  
+  .project-iframe {
+    width: 100%;
+    height: 500px; /* Adjust as necessary */
+    border: none; /* Removes the default iframe border */
+    overflow: hidden; /* Hides scrollbars */
+  }
+  
+  .project-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    opacity: 0; /* Make details invisible initially */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-card:hover .project-details {
+    opacity: 1; /* Make details visible on hover */
+  }
+  .project-details h3{
+    margin-bottom: 10px;
+  }
+  .project-details a {
+    color: #1e90ff; /* Adjust color as necessary */
+    margin: 10px 5px; /* Adjust as necessary */
+    text-decoration: none;
+  }
+  
+  .project-details a:hover {
+    color: #00ff7f; /* Adjust color as necessary */
+  }
+  
+.section4{
+    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.project-container{
-    margin-top: 50px;
-    display: flex;
+.contact-banner{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 24px; 
 }
+.links{
+    margin-top: 30px;
+}
+.links img{
+    width: 20px;
+    height: 20px;
+    margin: 20px 20px 20px 20px;
+}
+@media (max-width:1300px) {
+    .about-me{
+        margin-top: 450px;
+        text-align: left;
+        margin-right: 30px;
+    }
+    .about-me p{
+        max-width: 320px;
+        text-align: left;
+        font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    }
+}
+@media (max-width: 1111px){
+    .project-card {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border: 1px solid #ccc; /* Adjust as necessary */
+        border-radius: 10px; /* Optional: for rounded corners */
+        overflow: hidden; /* Ensures content doesn't spill over */
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: for a shadow effect */
+        margin-bottom: 20px; /* Adjust as necessary */
+        transition: transform 0.3s; /* Optional: for a smooth hover effect */
+      }
+}
+@media (max-width: 768px) {
 
-
+    body {
+        color: white;
+        background-color: black; 
+        background-image: url('images/rectangle.png'); 
+        background-repeat: no-repeat; 
+        background-position: center top; 
+        margin: 0; /* Removing margin to prevent unwanted spaces */
+        background-size: 50% 3460px;
+        height: 3466px;
+    }
+    .name {
+         font-size: 48px;
+     }
+     nav{
+         flex-direction: column;
+     }
+     .section1{
+        margin-top: 6rem;
+     }
+     .section2-container{
+        margin-top: 50px;
+        height: 1000px;
+        width: 100%;
+        background-image: url('images/Group.png');
+        background-position:  center ;
+        background-repeat: no-repeat; 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-size: 300px 500px;
+     }
+     .Software-container h2{
+        font-family: Bodoni Moda;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 0em;
+    text-align: center;
+    }
+    .developer{
+        padding-left: 0;
+    }
+    .Software-container{
+        margin-top: 4rem;
+        text-align: center;
+        margin-left: 0;
+    }
+    .section3 h2{
+        font-family: Bodoni Moda;
+        font-size: 64px;
+        font-weight: 800;
+        letter-spacing: 0em;
+    }
+    .Software-container p{
+        
+       max-width: none;
+       
+        font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+    }
+    .about-me{
+        margin-top: 300px;
+        text-align: center;
+        margin-right: 0;
+    }
+    .about-me h2{
+        font-family: Bodoni Moda;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 0em;
+    text-align: center;   
+    }
+    .about-me p{
+        max-width: none;
+        text-align: center;
+        font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+    .section3{
+        margin-top: 200px;
+    }
+ }
+ @media (max-width:370px) {
+    .name {
+        font-size: 30px;
+    }
+}
