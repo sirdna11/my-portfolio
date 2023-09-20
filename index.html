@@ -12,28 +12,43 @@
         <title>Andris Klimkāns - Web Developer Portfolio</title>
         <link rel="icon" href="images/aklogobaltsbezpunkta.jpg" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
     </head>
 <body>
+    <div id="myModal" class="modal">
+        <div class="window">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Contact me through the following ways:</p>
+          <p>Email: sirdna11@gmail.com</p>
+          <div class="links">
+            <a href="https://www.instagram.com/klimkans/" target="_blank"><img src="images/instagram-seeklogo.com.svg" alt="instagram" ></a>
+            <a href="https://www.linkedin.com/in/andrisklimkans/" target="_blank"><img src="images/iconmonstr-linkedin-3.svg" alt="linkedin"></a>
+            <a href="https://github.com/sirdna11" target="_blank"><img src="images/iconmonstr-github-1.svg" alt="github"></a>
+        </div>
+        </div>
+    </div>
+      </div>
     <nav>
         <a href="#about">ABOUT</a>
         <a href="#projects">PROJECTS</a>
         <a href="#contact">CONTACT</a>
     </nav>
-    <div class="section1">
+    <div class="section1 hidden">
         <div class="name-backgraund">
             <h1 class="name">
                 Andris Klimkāns
             </h1>
         </div>
     </div>
-    <div class="section2" id="about">
+    <div class="section2 " id="about">
         <div class="section2-container">
-            <div class="Software-container">
+            <div class="Software-container hidden">
                 <div>
                     <h2>Software</h2>
                     <h2 class="developer">developer</h2>
                 </div>
-                <div class="p-container">
+                <div class="p-container ">
                     <p>
                             I implement user interface design and solve user 
                             problems with HTML, CSS AND Javascript. I have 2 years
@@ -45,7 +60,7 @@
                      <button class="modern-btn">contact me</button>
                 </div>
             </div>
-            <div class="about-me" >
+            <div class="about-me hidden" >
                 <div>
                     <h2 class="about-me-h2"> About me</h2>
                 </div>
@@ -61,7 +76,7 @@
             </div>
         </div>
     </div>
-    <div class="section3" id="projects">
+    <div class="section3 hidden" id="projects">
         <div>
             <h2>Projects</h2>
         </div>
@@ -69,8 +84,8 @@
                 <div class="project-card">
                     <iframe src="https://dulcet-faun-3fbf27.netlify.app/" title="Project Title" class="project-iframe" scrolling="no"></iframe>
                     <div class="project-details">
-                      <h3>Project Title</h3>
-                      <p>Brief description of the project.</p>
+                        <h3>CV-Generator</h3>
+                        <p>You can create your own personal CV using my templates.</p>
                       <a href="https://dulcet-faun-3fbf27.netlify.app/" target="_blank">View Full Screen</a>
                       <a href="https://github.com/sirdna11/cv-generator" target="_blank">View Code</a>
                     </div>
@@ -78,8 +93,8 @@
                   <div class="project-card">
                     <iframe src="https://dulcet-faun-3fbf27.netlify.app/" title="Project Title" class="project-iframe" scrolling="no"></iframe>
                     <div class="project-details">
-                      <h3>cv-generator</h3>
-                      <p>Brief description of the project.</p>
+                        <h3>CV-Generator</h3>
+                        <p>You can create your own personal CV using my templates.</p>
                       <a href="https://dulcet-faun-3fbf27.netlify.app/" target="_blank">View Full Screen</a>
                       <a href="https://github.com/sirdna11/cv-generator" target="_blank">View Code</a>
                     </div>
@@ -87,15 +102,15 @@
                   <div class="project-card">
                     <iframe src="https://dulcet-faun-3fbf27.netlify.app/" title="Project Title" class="project-iframe" scrolling="no"></iframe>
                     <div class="project-details">
-                      <h3>Project Title</h3>
-                      <p>Brief description of the project.</p>
+                        <h3>CV-Generator</h3>
+                        <p>You can create your own personal CV using my templates.</p>
                       <a href="https://dulcet-faun-3fbf27.netlify.app/" target="_blank">View Full Screen</a>
                       <a href="https://github.com/sirdna11/cv-generator" target="_blank">View Code</a>
                     </div>
                   </div>
             </div>
     </div>
-    <div class="section4" id="contact">
+    <div class="section4 hidden" id="contact">
         <div>
             <img src="images/Message circle.svg" alt="">
         </div>
@@ -109,7 +124,6 @@
             <a href="https://github.com/sirdna11" target="_blank"><img src="images/iconmonstr-github-1.svg" alt="github"></a>
         </div>
     </div>
-    
     
 </body>
 </html>
