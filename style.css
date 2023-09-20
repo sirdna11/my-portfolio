@@ -385,6 +385,9 @@ text-align: left;
     }
  }
  @media (max-width:425px) {
+    .section1{
+        margin-top: 1rem;
+     }
     .section2-container{
         background-image: url('images/Group.png');
         background-position: center 51%; ;
