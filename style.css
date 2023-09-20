@@ -135,6 +135,7 @@ text-align: left;
 
 }
 .modern-btn {
+    font-family: Inter;
     background-color: white;
     color: black;
     border: none; /* Removes the default border */
@@ -199,6 +200,7 @@ text-align: left;
   }
   
   .project-details {
+    font-family: Roboto;
     position: absolute;
     top: 0;
     left: 0;
@@ -220,14 +222,18 @@ text-align: left;
     opacity: 1; /* Make details visible on hover */
   }
   .project-details h3{
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
   }
   .project-details a {
     color: #1e90ff; /* Adjust color as necessary */
     margin: 10px 5px; /* Adjust as necessary */
     text-decoration: none;
+    font-size: 20px;
   }
-  
+  .project-details p{
+    font-size: 25px;
+  }
   .project-details a:hover {
     color: #00ff7f; /* Adjust color as necessary */
   }
@@ -305,11 +311,11 @@ text-align: left;
         margin-top: 6rem;
      }
      .section2-container{
-        margin-top: 50px;
+        margin-top: 0;
         height: 1000px;
         width: 100%;
         background-image: url('images/Group.png');
-        background-position:  center ;
+        background-position:  center 58%;
         background-repeat: no-repeat; 
         display: flex;
         justify-content: space-between;
@@ -327,7 +333,7 @@ text-align: left;
         padding-left: 0;
     }
     .Software-container{
-        margin-top: 4rem;
+        margin-top: 0;
         text-align: center;
         margin-left: 0;
     }
@@ -349,10 +355,10 @@ text-align: left;
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
-    margin-top: 20px;
+    margin-top: 8px;
     }
     .about-me{
-        margin-top: 300px;
+        margin-top: 400px;
         text-align: center;
         margin-right: 0;
     }
@@ -378,8 +384,42 @@ text-align: left;
         margin-top: 200px;
     }
  }
- @media (max-width:370px) {
+ @media (max-width:425px) {
+    .section2-container{
+        background-image: url('images/Group.png');
+        background-position: center 51%; ;
+        background-repeat: no-repeat; 
+        display: flex;
+        justify-content: space-between;
+        
+    }
+ }
+ @media (max-width:375px){
+    .section2-container{
+        background-image: url('images/Group.png');
+        background-position: center 58%; ;
+        background-repeat: no-repeat; 
+        display: flex;
+        justify-content: space-between;
+        
+    }
+ }
+ @media (max-width:320px) {
+    .section2-container{
+        background-image: url('images/Group.png');
+        background-position: center 75%; ;
+        background-repeat: no-repeat; 
+        display: flex;
+        justify-content: space-between;
+        
+    }
     .name {
         font-size: 30px;
+    }
+    .section1{
+        margin-top: 1rem;
+    }
+    .section3{
+        margin-top: 20rem;
     }
 }
